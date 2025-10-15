@@ -1,7 +1,6 @@
 import csv
 import argparse
 from tabulate import tabulate
-import pathlib
 
 
 def init_argpars():
@@ -51,3 +50,4 @@ if __name__ == "__main__":
     list_of_val = read_file(args.files)
     ans = select_report(args.report, list_of_val)
     print(tabulate(ans[1:], headers=ans[0]))
+
